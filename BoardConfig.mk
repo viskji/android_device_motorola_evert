@@ -49,5 +49,8 @@ ENABLE_VENDOR_RIL_SERVICE := false
 # Treble
 PRODUCT_SHIPPING_API_LEVEL := 26
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += DBATTERY_REAL_INFO
+
 # inherit from the proprietary version
 -include vendor/motorola/evert/BoardConfigVendor.mk
