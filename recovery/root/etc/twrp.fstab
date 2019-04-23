@@ -6,7 +6,7 @@
 /boot            emmc       /dev/block/bootdevice/by-name/boot                    flags=slotselect
 /data            ext4      /dev/block/bootdevice/by-name/userdata                 flags=encryptable=ice
 /misc            emmc      /dev/block/bootdevice/by-name/misc
-/system          ext4      /dev/block/bootdevice/by-name/system                   flags=slotselect
+/system_root     ext4      /dev/block/bootdevice/by-name/system                   flags=slotselect
 /system_image    emmc      /dev/block/bootdevice/by-name/system                   flags=slotselect
 /vendor          ext4      /dev/block/bootdevice/by-name/vendor                   flags=backup=1;display="Vendor";slotselect;wipeingui
 /vendor_image    emmc      /dev/block/bootdevice/by-name/vendor                   flags=backup=1;display="Vendor image";slotselect
