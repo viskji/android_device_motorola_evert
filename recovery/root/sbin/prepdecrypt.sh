@@ -17,7 +17,9 @@ finish()
 	setprop crypto.ready 1
 	exit 0
 }
-
+sleep 1
+mkdir -p /system/etc/vintf
+mv /vendor/system_manifest.xml /system/etc/vintf/manifest.xml
 suffix=$(getprop ro.boot.slot_suffix)
 if [ -z "$suffix" ]; then
 	suf=$(getprop ro.boot.slot)
