@@ -22,7 +22,9 @@ $(call inherit-product-if-exists, vendor/motorola/evert/evert-vendor.mk)
 -include $(LOCAL_PATH)/vendor_prop.mk
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-pa
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
